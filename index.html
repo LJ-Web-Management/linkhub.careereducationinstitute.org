@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Career Education Institute | Links</title>
+  <meta name="description" content="Career Education Institute: online career training by job title, free career quizzes, salary data, career guides and the CEI blog.">
+  <meta property="og:title" content="Career Education Institute">
+  <meta property="og:description" content="Career training by job title, free career quizzes, salary data and guides.">
+  <meta property="og:url" content="https://linkhub.careereducationinstitute.org/">
+  <meta property="og:image" content="https://linkhub.careereducationinstitute.org/assets/og-image.jpg">
+  <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#061630" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <style>
+    /* Colours match www.careereducationinstitute.org: navy, teal and gold on warm paper. */
+    :root {
+      --brand: #022350;
+      --brand-2: #036f86;
+      --gold: #cc9628;
+      --bg: #faf8f3;
+      --surface: #ffffff;
+      --text: #1d2433;
+      --heading: #022350;
+      --secondary: #566074;
+      --tertiary: #7d8596;
+      --separator: #e4ded2;
+      --hover: rgba(2, 35, 80, .04);
+      --glow: rgba(204, 150, 40, .16);
+      --shadow: 0 1px 1px rgba(2, 35, 80, .03), 0 8px 30px rgba(2, 35, 80, .06);
+      --link: #0b56b8;
+      --serif: "Iowan Old Style", "Charter", "Sitka Text", Cambria, Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-2: #4fb8cf;
+        --gold: #e0b04a;
+        --bg: #061630;
+        --surface: #0d2448;
+        --text: #f3f1ea;
+        --heading: #f3f1ea;
+        --secondary: #a9b3c4;
+        --tertiary: #8590a4;
+        --separator: rgba(255, 255, 255, .12);
+        --hover: rgba(255, 255, 255, .05);
+        --glow: rgba(79, 184, 207, .16);
+        --shadow: none;
+        --link: #7fb2ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: var(--sans);
+      background:
+        radial-gradient(60rem 28rem at 50% -8rem, var(--glow), transparent 70%),
+        var(--bg);
+      background-repeat: no-repeat;
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 17px;
+      line-height: 1.47;
+      letter-spacing: -.01em;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: max(56px, env(safe-area-inset-top)) 16px max(40px, env(safe-area-inset-bottom));
+    }
+
+    /* Hero */
+    header { text-align: center; margin-bottom: 36px; }
+    .logo {
+      display: block;
+      width: 112px; height: 112px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 0 1px rgba(2, 35, 80, .06), 0 0 0 5px rgba(204, 150, 40, .35), 0 12px 32px rgba(2, 35, 80, .18);
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      color: var(--heading);
+      font-size: clamp(30px, 7vw, 40px);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -.01em;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .55em;
+      margin-bottom: 12px;
+      color: var(--brand-2);
+      font: 700 12px/1.2 var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: .62em; height: .62em; background: var(--gold); flex: none; }
+    .lede {
+      margin: 12px auto 0;
+      max-width: 420px;
+      color: var(--secondary);
+      font-size: 19px; line-height: 1.42;
+    }
+
+    /* Social */
+    .social { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 22px 0 0; padding: 0; list-style: none; }
+    .social a {
+      display: grid; place-items: center;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      transition: transform .15s ease, background .15s ease;
+    }
+    .social a:hover { background: var(--brand-2); }
+    @media (prefers-color-scheme: dark) {
+      .social a { background: var(--surface); color: var(--gold); }
+      .social a:hover { background: var(--surface); }
+    }
+    .social a:hover { transform: translateY(-2px); }
+    .social a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .social svg { width: 19px; height: 19px; }
+
+    /* Link list */
+    section + section { margin-top: 28px; }
+    h2 {
+      margin: 0 0 8px 16px;
+      color: var(--secondary);
+      font-family: var(--mono);
+      font-size: 12px; font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .group {
+      list-style: none; margin: 0; padding: 0;
+      background: var(--surface);
+      border: 1px solid var(--separator);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .group li + li .link .label { border-top: 1px solid var(--separator); }
+    .link {
+      display: flex; align-items: stretch;
+      padding-left: 16px;
+      color: var(--text);
+      text-decoration: none;
+      box-shadow: inset 0 0 0 transparent;
+      transition: background .15s ease, box-shadow .15s ease;
+    }
+    .link:hover { background: var(--hover); box-shadow: inset 3px 0 0 var(--gold); }
+    .link:active { background: var(--separator); }
+    .link:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; border-radius: 14px; }
+    .icon {
+      flex: none; align-self: center;
+      width: 48px; height: 48px;
+      margin: 10px 14px 10px 0;
+      border-radius: 11px;
+    }
+    .icon-logo { background: #fff; object-fit: cover; box-shadow: 0 0 0 1px var(--separator); }
+    .label {
+      flex: 1; min-width: 0;
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px 12px 0;
+    }
+    .text { flex: 1; min-width: 0; }
+    .title { display: block; font-size: 17px; font-weight: 600; line-height: 1.25; }
+    .domain { display: block; margin-top: 2px; color: var(--secondary); font-size: 14px; overflow-wrap: anywhere; }
+    .chev { flex: none; width: 8px; height: 14px; color: var(--brand-2); opacity: .75; transition: transform .2s ease; }
+    .link:hover .chev { transform: translateX(2px); }
+
+    footer {
+      margin-top: 44px;
+      text-align: center;
+      color: var(--tertiary);
+      font-size: 12px; letter-spacing: 0;
+    }
+    footer a { color: var(--link); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Gentle entrance */
+    @media (prefers-reduced-motion: no-preference) {
+      header, main, footer { animation: rise .7s cubic-bezier(.2, .8, .2, 1) both; }
+      main { animation-delay: .08s; }
+      footer { animation-delay: .16s; }
+      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .link, .chev, .social a { transition: none; }
+    }
+  </style>
+  <script type="application/json" id="links-data">
+{
+  "sections": [
+    {
+      "title": "Career Education Institute",
+      "links": [
+        {
+          "title": "Career Education Institute",
+          "subtitle": "careereducationinstitute.org",
+          "url": "https://www.careereducationinstitute.org/"
+        },
+        {
+          "title": "Job-Title Training",
+          "subtitle": "Online, self-paced career training",
+          "url": "https://www.careereducationinstitute.org/training/"
+        },
+        {
+          "title": "Career Match Quiz",
+          "subtitle": "Free quiz to find careers that fit you",
+          "url": "https://www.careereducationinstitute.org/quizzes/career-match/"
+        },
+        {
+          "title": "Explore Careers",
+          "subtitle": "Pay, outlook and day-in-the-life guides",
+          "url": "https://www.careereducationinstitute.org/careers/"
+        },
+        {
+          "title": "Salary Guide",
+          "subtitle": "U.S. pay by job title",
+          "url": "https://www.careereducationinstitute.org/salary-guide/"
+        },
+        {
+          "title": "Career Guides",
+          "subtitle": "Choosing, changing and landing a career",
+          "url": "https://www.careereducationinstitute.org/guides/"
+        },
+        {
+          "title": "CEI Blog",
+          "subtitle": "blog.careereducationinstitute.org",
+          "url": "https://blog.careereducationinstitute.org/"
+        },
+        {
+          "title": "Training for Employers",
+          "subtitle": "Onboarding training for teams",
+          "url": "https://www.careereducationinstitute.org/for-employers/"
+        },
+        {
+          "title": "Contact Us",
+          "subtitle": "Questions, enrollment and group pricing",
+          "url": "https://www.careereducationinstitute.org/contact/"
+        }
+      ]
+    }
+  ],
+  "social": []
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="assets/logo.png" width="112" height="112" alt="Career Education Institute logo">
+      <span class="eyebrow">Career training by job title</span>
+      <h1>Career Education Institute</h1>
+      <p class="lede">Online job-title training, free career quizzes, salary data and guides, all in one place.</p>
+      <!-- social:start -->
+      <!-- social:end -->
+    </header>
+
+    <main>
+      <!-- links:start -->
+      <section aria-label="Career Education Institute">
+        <ul class="group">
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Career Education Institute</span><span class="domain">careereducationinstitute.org</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/training/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Job-Title Training</span><span class="domain">Online, self-paced career training</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/quizzes/career-match/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Career Match Quiz</span><span class="domain">Free quiz to find careers that fit you</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/careers/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Explore Careers</span><span class="domain">Pay, outlook and day-in-the-life guides</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/salary-guide/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Salary Guide</span><span class="domain">U.S. pay by job title</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/guides/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Career Guides</span><span class="domain">Choosing, changing and landing a career</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://blog.careereducationinstitute.org/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">CEI Blog</span><span class="domain">blog.careereducationinstitute.org</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/for-employers/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Training for Employers</span><span class="domain">Onboarding training for teams</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.careereducationinstitute.org/contact/" target="_blank" rel="noopener">
+            <span class="label"><span class="text"><span class="title">Contact Us</span><span class="domain">Questions, enrollment and group pricing</span></span><svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        </ul>
+      </section>
+      <!-- links:end -->
+    </main>
+
+    <footer>
+      Copyright &copy; <span id="year">2026</span> <a href="https://www.careereducationinstitute.org">Career Education Institute</a>. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="render.js?v=9f176dde" defer></script>
+  <script src="live.js?v=2dde0ee9" data-source="https://raw.githubusercontent.com/LJ-Web-Management/linkhub-data/main/careereducationinstitute.json" defer></script>
+</body>
+</html>
